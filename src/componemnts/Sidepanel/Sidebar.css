@@ -1,18 +1,22 @@
-/* .sidebar{
+.sidebar{
     display: flex;
     flex-direction: column;
     width: fit-content;
-    position: static;
-    box-sizing: border-box;
+    position: fixed;
+    /* box-sizing: border-box; */
     border-right: 1px dotted blue;
+    /* height: calc(100vh - var(--Navbar)); */
+    margin-top:50px;
+    /* z-index: 100; */
+    margin-left: 0;
 }
 .sidebar ul{
     display: flex;
     flex-direction: column;
     width: fit-content;
-    padding: 10px;
+    list-style: none;
 }
 .sidebar ul li{
     border: 1px solid yellow;
     padding: 5px;
-} */
+}
