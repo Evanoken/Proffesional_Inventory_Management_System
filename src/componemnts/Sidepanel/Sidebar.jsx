@@ -1,10 +1,11 @@
+import {GrDashboard} from 'react-icons/gr'
 import { Link } from 'react-router-dom';
 import './Sidebar.css'
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
-        <li>
+        <li><GrDashboard className='Gcon'/>
           <Link to="/" className='lnk'>Dashboard</Link>
         </li>
         <li>

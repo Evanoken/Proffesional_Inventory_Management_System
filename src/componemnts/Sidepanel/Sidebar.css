@@ -1,26 +1,36 @@
 .sidebar{
-    display:inline-block;
+    /* display:flex; */
+    /* float: inline-start; */
     /* flex-direction: column; */
     width: fit-content;
-    position: sticky;
+    /* position: sticky; */
     /* box-sizing: border-box; */
     border-right: 1px dotted blue;
-    height: 100vh;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .sidebar ul{
     display: flex;
     flex-direction: column;
     gap: 50px;
     list-style: none;
+    margin-left: 0;
     
 }
 .sidebar ul li{
-    border: 1px solid yellow;
-    padding: 5px;
-    text-decoration: none;
     
+    cursor: pointer;
+    gap: 10px;
+      
 }
 .lnk{
     text-decoration: none;
+    font-size: 25px;
+    color:#5a9ae7;
+    font-weight: bolder;
+}
+.Gcon{
+    background-color: #455c06 ;
+    font-size: 20px;
+    margin-left: 0;
+    border-radius: 10px;
 }
