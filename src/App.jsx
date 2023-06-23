@@ -1,19 +1,13 @@
-import Navbar from './componemnts/Navbar/Navbar'
-import { Routes,  BrowserRouter, Route } from 'react-router-dom';
-import Dashboard from './pages/Dashboard/Dashboard';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Layout from './Layout';
 
 const App = () => {
-    return (
-        <div>
-            <BrowserRouter>
-            <Navbar/>
-            <Routes>
-                <Route exact path="/login" element={<Dashboard/>}/> 
-            </Routes>
-            
-            </BrowserRouter>
-           
-        </div>
-    )
+  return (
+    <Router>
+      <Layout />
+    </Router>
+    
+  );
 };
+
 export default App;

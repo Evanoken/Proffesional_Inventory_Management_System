@@ -5,7 +5,7 @@ import { FiSettings } from 'react-icons/fi';
 import {AiOutlineLogout} from 'react-icons/ai';
 import './Navbar.css';
 import Avatar from '../../assets/avatar.jpg';
-function navBar() {
+function Navbar() {
   return (
     <>
       <div className="navContainer">
@@ -28,4 +28,4 @@ function navBar() {
   )
 }
 
-export default navBar
+export default Navbar

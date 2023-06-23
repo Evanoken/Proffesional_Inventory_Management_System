@@ -1,0 +1,18 @@
+/* .sidebar{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    box-sizing: border-box;
+    border-right: 1px dotted blue;
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px;
+}
+.sidebar ul li{
+    border: 1px solid yellow;
+    padding: 5px;
+} */
