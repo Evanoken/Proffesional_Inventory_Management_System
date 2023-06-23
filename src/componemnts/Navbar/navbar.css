@@ -1,0 +1,56 @@
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1e6e6;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.navLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.navLeft img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+.navLeft h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+}
+.navLeft .lIcon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    color: chocolate;
+}
+.navRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.navRight .rIcon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.navRight .rIconL{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    color: red;
+}
