@@ -1,22 +1,26 @@
 .sidebar{
-    display: flex;
-    flex-direction: column;
+    display:inline-block;
+    /* flex-direction: column; */
     width: fit-content;
-    position: fixed;
+    position: sticky;
     /* box-sizing: border-box; */
     border-right: 1px dotted blue;
-    /* height: calc(100vh - var(--Navbar)); */
-    margin-top:50px;
-    /* z-index: 100; */
-    margin-left: 0;
+    height: 100vh;
+    justify-content: center;
 }
 .sidebar ul{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    gap: 50px;
     list-style: none;
+    
 }
 .sidebar ul li{
     border: 1px solid yellow;
     padding: 5px;
+    text-decoration: none;
+    
+}
+.lnk{
+    text-decoration: none;
 }

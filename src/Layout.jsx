@@ -6,15 +6,19 @@ import './Layout.css'
 const Layout = () => {
   return (
     <div className="layout">
-    <section> <Navbar /> </section>
-    <section>
+    <div className="nav"><Navbar /></div> 
+    
       <div className="content">
-      <Sidebar />
+        <div className="side"> <Sidebar /></div>
+        <div className="pg">
         <Routes>
-          <Route path="/" element={Dashboard} />      
+          <Route path="/" element={<Dashboard/>} />
+
         </Routes>
+        </div>
+        
       </div>
-      </section>
+      
     </div>
   );
 };

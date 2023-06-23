@@ -5,22 +5,22 @@ const Sidebar = () => {
     <div className="sidebar">
       <ul>
         <li>
-          <Link to="/Home">Home</Link>
+          <Link to="/" className='lnk'>Dashboard</Link>
         </li>
         <li>
-          <Link to="/products">Products</Link>
+          <Link to="/products" className='lnk'>Products</Link>
         </li>
         <li>
-          <Link to="/achievements">Achievements</Link>
+          <Link to="/achievements" className='lnk'>Achievements</Link>
         </li>
         <li>
-            <Link to="/Expenses" >Expenses</Link>
+            <Link to="/Expenses" className='lnk'>Expenses</Link>
         </li>
         <li>
-            <Link to="/Purchases">Purchases</Link>
+            <Link to="/Purchases" className='lnk'>Purchases</Link>
         </li>
         <li>
-            <Link to="/Sales">Sales</Link>
+            <Link to="/Sales" className='lnk'>Sales</Link>
         </li>
       </ul>
     </div>
