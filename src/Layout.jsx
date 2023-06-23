@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
-import Sidebar from './componemnts/Sidepanel/Sidebar'
-import Navbar from './componemnts/Navbar/Navbar'
-import Dashboard from './pages/Dashboard/Dashboard';
+import Sidebar from './componemnts/Sidepanel/Sidebar.jsx'
+import Navbar from './componemnts/Navbar/Navbar.jsx'
+import Dashboard from './pages/Dashboard/Dashboard.jsx';
 
 const Layout = () => {
   return (
