@@ -1,5 +1,6 @@
-/* .dashContainer{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-  } */
+.Dcon{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
