@@ -53,7 +53,7 @@ function Dashboard() {
        <Line data={data} options={options}></Line>
       </div>
       <div className="chart">
-        <h1 className="text-center">Welcome to the dashboard</h1>
+        <h1 className="text-center">Line graph 4</h1>
        <Line data={data} options={options}></Line>
       </div>
       </div>
