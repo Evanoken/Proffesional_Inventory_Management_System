@@ -8,11 +8,11 @@ import './Dashboard.css'
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 function Dashboard() {
   const data ={
-    labels: ['Mon', 'Tue', 'Wed'],
+    labels: ['Mon', 'Tue', 'Wed','Thur','Fri','Sat'],
     datasets: [
       {
         label:'my first dataset',
-        data: [6, 3, 9],
+        data: [6, 3, 9, 2, 7, 13],
         backgroundColor:'aqua',
         borderColor:'black',
         borderWidth:5,
@@ -29,6 +29,7 @@ function Dashboard() {
     scales:{
 
     }
+    
   }
   return (
     <div className="Dcon">
