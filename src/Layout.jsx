@@ -3,6 +3,7 @@ import Sidebar from './componemnts/Sidepanel/Sidebar.jsx'
 import Navbar from './componemnts/Navbar/Navbar.jsx'
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
 import './Layout.css'
+import Sales from './pages/Sales/Sales.jsx';
 const Layout = () => {
   return (
     <div className="layout">
@@ -13,7 +14,7 @@ const Layout = () => {
         <div className="pg">
         <Routes>
           <Route path="/" element={<Dashboard/>} />
-
+          <Route path="/sales" element={<Sales/>} />
         </Routes>
         </div>
         

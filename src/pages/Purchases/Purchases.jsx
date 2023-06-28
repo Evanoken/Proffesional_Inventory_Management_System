@@ -1,6 +1,24 @@
 function Purchases() {
   return (
-    <div>Purchases</div>
+    <div>
+      <div className="card">
+        <h1>History</h1>
+        <ul>data1</ul>
+      </div>
+      <div className="card">
+        <h1>History</h1>
+        <ul>data1</ul>
+      </div>
+      <div className="card">
+        <h1>History</h1>
+        <ul>data1</ul>
+      </div>
+      <div className="card">
+        <h1>History</h1>
+        <ul>data1</ul>
+      </div>
+    </div>
+
   )
 }
 

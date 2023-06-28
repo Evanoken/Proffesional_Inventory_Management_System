@@ -52,28 +52,35 @@ function Dashboard() {
   return (
     <div className="Dcon">
       <div className="chart">
-      <h1 className="text-center">Welcome to the dashboard</h1>
-       <Line data={data} options={options}></Line>
-      </div>
-      <div className="chart">
-        <h1 className="text-center">Welcome to the dashboard</h1>
-       <Line data={data} options={options}></Line>
-      </div>
-      <div className="chart">
-        <h1 className="text-center">Welcome to the dashboard</h1>
-       <Line data={data} options={options}></Line>
-      </div>
-      <div className="chart">
-        <h1 className="text-center">Welcome to the dashboard</h1>
-       <Line data={data} options={options}></Line>
-      </div>
-      <div className="chart">
-        <h1 className="text-center">Welcome to the dashboard</h1>
-       <Pie data={data1} options={options}></Pie>
+      <h1 className="text-center" >Welcome to the dashboard</h1>
+       <Line data={data} options={options} className="chart1"></Line>
       </div>
       <div className="chart">
         <h1 className="text-center">Bar Chart</h1>
-       <Bar data={data} options={options}></Bar>
+       <Bar data={data} options={options} className="chart1"></Bar>
+      </div>
+      <div className="chart">
+        <h1 className="text-center">Welcome to the dashboard</h1>
+       <Line data={data} options={options} className="chart1"></Line>
+      </div>
+         
+      <div className="charting">
+        <ul className='card1'>Sales
+          <li>$2827728 purchases</li>
+          <li>$2882882 commision</li>
+        </ul>
+        <ul className='card1'>Sales
+          <li>$2827728 purchases</li>
+          <li>$2882882 commision</li>
+        </ul>
+        <ul className='card1'>Sales
+          <li>$2827728 purchases</li>
+          <li>$2882882 commision</li>
+        </ul>
+        <ul className='card1'>Sales
+          <li>$2827728 purchases</li>
+          <li>$2882882 commision</li>
+        </ul>
       </div>
       </div>
          
