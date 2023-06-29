@@ -1,13 +1,27 @@
-.Dcon{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin: 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.chart1{
-  width: 300px;
-  height: 700px;
+
+.chart-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.chart {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
 }
 .card1{
   list-style-type: none;
@@ -28,3 +42,4 @@
   gap: 40px;
   justify-content: space-evenly;
 }
+

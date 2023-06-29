@@ -70,7 +70,7 @@ function Sales() {
             <li>Order2</li>
           </ul>
         </div>
-        <div className="col">
+        <div className="col1">
           Canceled Orders
           <ul>
             <li>Order1</li>
@@ -79,11 +79,11 @@ function Sales() {
         </div>
       </div>
       <div className="row2">
-        <div className="chart">
+        <div className="chart1">
           <h1 className="text-center">Bar Chart</h1>
           <Bar data={data} options={options}></Bar>
         </div>
-        <div className="chart">
+        <div className="chart1">
           <h1 className="text-center">Line Graph</h1>
           <Line data={data} options={options}></Line>
         </div>

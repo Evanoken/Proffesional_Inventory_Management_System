@@ -29,7 +29,7 @@ const Sidebar = () => {
         </div>
        <div className="card">
         <img src={avatarPic} alt="piv" />
-        <Link to="/Expenses" className='lnk'>Services</Link>
+        <Link to="/services" className='lnk'>Services</Link>
         </div>
         <div className="card">
         <img src={avatarPic} alt="piv" />
