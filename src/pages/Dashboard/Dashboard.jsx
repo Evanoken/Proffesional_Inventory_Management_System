@@ -1,8 +1,29 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Line, Bar } from "react-chartjs-2";
-import {Chart as ChartJS, CategoryScale, LinearScale, PointElement,LineElement, Title, Tooltip, Legend, BarElement, ArcElement} from "chart.js";
-ChartJS.register(CategoryScale,LinearScale,PointElement,LineElement, BarElement,ArcElement,Title,Tooltip,Legend);
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  BarElement,
+  ArcElement,
+} from "chart.js";
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  ArcElement,
+  Title,
+  Tooltip,
+  Legend
+);
 import "./Dashboard.css";
 import { apiDomain } from "../../Utils/Utils";
 function Dashboard() {
@@ -17,7 +38,20 @@ function Dashboard() {
       const response = await axios.get(`${apiDomain}/api/total`);
       const fetchedData = response.data.data;
 
-      const labels = ["jan", "feb", "march", "april", "may","june","July","aug","Sep","Oct","Nov","Dec"];
+      const labels = [
+        "jan",
+        "feb",
+        "march",
+        "april",
+        "may",
+        "june",
+        "July",
+        "aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
       const amounts = fetchedData.map((item) => item.total_amount);
 
       const lineChartData = {
@@ -93,6 +127,7 @@ function Dashboard() {
           <li>$2882882 commision</li>
         </ul>
       </div>
+      
     </div>
   );
 }

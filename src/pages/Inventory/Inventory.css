@@ -1,0 +1,85 @@
+.inventory-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .inventory-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .inventory-container p {
+    font-size: 16px;
+  }
+  
+  .inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .inventory-table th,
+  .inventory-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .inventory-table th {
+    font-weight: bold;
+  }
+  
+  .inventory-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .inventory-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .inventory-buttons button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Keyframe Animations */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .inventory-container {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .inventory-table {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .inventory-buttons {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  

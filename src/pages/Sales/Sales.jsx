@@ -1,95 +1,122 @@
-import "./sales.css";
-import { Line, Bar, Pie, Doughnut, Radar } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-  ArcElement,
-} from "chart.js";
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  BarElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend
-);
-function Sales() {
-  const data = {
-    labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat"],
-    datasets: [
-      {
-        label: "my first dataset",
-        data: [6, 3, 9, 2, 7, 13],
-        backgroundColor: [
-          "aqua",
-          "red",
-          "blue",
-          "green",
-          "purple",
-          "violet",
-          "yellow",
-        ],
-      },
-    ],
-  };
-  const options = {
-    plugins: {
-      legend: true,
-    },
-    scales: {},
-  };
-  return (
-    <div className="Scon">
-      <div className="row1">
-        <div className="col1">
-          Complete Orders
-          <ul>
-            <li>
-              <h1>Order1:</h1>
-              Moreover, I have actively sought opportunities beyond the
-              classroom my communication, teamwork, and leadership abilities.
-            </li>
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { apiDomain } from "../../Utils/Utils";
 
-            <li>Order2</li>
-          </ul>
-        </div>
-        <div className="col1">
-          Pending Orders
-          <ul>
-            <li>Order1</li>
-            <li>Order2</li>
-          </ul>
-        </div>
-        <div className="col1">
-          Canceled Orders
-          <ul>
-            <li>Order1</li>
-            <li>Order2</li>
-          </ul>
-        </div>
+// import "./Sales.css"; // Import CSS file for custom styling
+
+const Sales = () => {
+  const [orders, setOrders] = useState([]);
+  const [formData, setFormData] = useState({
+    date: "",
+    totalAmount: "",
+    customer_name: "",
+  });
+
+  useEffect(() => {
+    fetchOrders();
+  }, []);
+
+  const fetchOrders = async () => {
+    try {
+      const response = await axios.get(`${apiDomain}/api/orders`);
+      setOrders(response.data);
+    } catch (error) {
+      console.error("Error while fetching orders:", error);
+    }
+  };
+
+  const createOrder = async (orderData) => {
+    try {
+      await axios.post(`${apiDomain}/api/orders`, orderData);
+      // Update orders list or perform any necessary actions
+      fetchOrders();
+    } catch (error) {
+      console.error("Error while creating order:", error);
+    }
+  };
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    createOrder(formData);
+    setFormData({ date: "", totalAmount: "", productIds: "" });
+  };
+
+  return (
+    <div className="sales-container">
+      <div className="orders">
+        <h2 className="section-title">Orders</h2>
+        {orders.length > 0 ? (
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Total Amount</th>
+                <th>Customer ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              {orders.map((order) => (
+                <tr key={order.order_id}>
+                  <td>{order.order_id}</td>
+                  <td>{order.order_date}</td>
+                  <td>{order.total_amount}</td>
+                  <td>{order.customer_id}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <p>No orders available</p>
+        )}
       </div>
-      <div className="row2">
-        <div className="chart1">
-          <h1 className="text-center">Bar Chart</h1>
-          <Bar data={data} options={options}></Bar>
-        </div>
-        <div className="chart1">
-          <h1 className="text-center">Line Graph</h1>
-          <Line data={data} options={options}></Line>
-        </div>
+
+      <h2 className="section-title">Create Order</h2>
+      {/* Create Order form */}
+      <div className="create-order">
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="date">Date:</label>
+            <input
+              type="text"
+              id="date"
+              name="date"
+              value={formData.date}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="totalAmount">Total Amount:</label>
+            <input
+              type="text"
+              id="totalAmount"
+              name="totalAmount"
+              value={formData.totalAmount}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="productIds">Product IDs:</label>
+            <input
+              type="text"
+              id="productIds"
+              name="productIds"
+              value={formData.productIds}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <button type="submit">Create</button>
+        </form>
       </div>
     </div>
   );
-}
+};
 
 export default Sales;

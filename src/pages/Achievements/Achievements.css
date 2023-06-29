@@ -1,0 +1,66 @@
+.achievements-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #d2dbd8;
+  animation: colorAnimation 5s linear infinite;
+}
+
+@keyframes colorAnimation {
+  0% {
+    background-color: #d2dbd8;
+  }
+  20% {
+    background-color: #f4d160;
+  }
+  40% {
+    background-color: #e6838d;
+  }
+  60%{
+    background-color: #bed1da;
+  }
+  80%{
+    background-color: rgb(209, 177, 209);
+  }
+  100%{
+    background-color: rgb(179, 197, 197);
+  }
+
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.total-sales {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.comment {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.achievement-section {
+  margin-top: 10px;
+}
+
+.achievement {
+  color: coral;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+}
