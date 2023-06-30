@@ -1,0 +1,71 @@
+.regCntainer {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: silver;
+    border-radius: 10px;
+  }
+  
+  .regCntainer h1 {
+    text-align: center;
+  }
+  
+  .regCntainer form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .regCntainer label {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .regCntainer input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .regCntainer button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+   margin: auto;
+   font-size: 30px;
+   padding: 10px;
+   font-weight: bold;
+   border-radius:10px;
+  }
+  
+  .regCntainer input[type="submit"]:hover {
+    background-color: #45a049;
+    
+  }
+  
+  .regCntainer .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .fi{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+  }
+  .lg{
+    font-size: 20px;
+    font-style: italic;
+    margin: 20px auto;
+  }
+  .llg {
+    text-decoration: none;
+    font-size: 24px;
+    cursor:pointer;
+    font-style: normal;
+    font-weight: bold;
+  }
+  

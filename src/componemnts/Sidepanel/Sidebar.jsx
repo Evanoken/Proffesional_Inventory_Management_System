@@ -8,7 +8,7 @@ const Sidebar = () => {
     <div className="sidebar">
         <div className="card">
         <img src={avatarPic} alt="piv" />
-        <Link to="/" className='lnk'>Dashboard</Link>
+        <Link to="/dashboard" className='lnk'>Dashboard</Link>
         </div>
         <div className="card">
         <img src={avatarPic} alt="piv" />

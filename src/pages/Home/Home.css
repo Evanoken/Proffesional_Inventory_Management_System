@@ -1,1 +1,110 @@
- 
+.homepage {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-gif-url');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+  }
+  
+  .content1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 1;
+    color: #0c0202;
+  }
+  
+  .content1 h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .content1 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .creative-content {
+    text-align: center;
+  }
+  
+  .creative-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .creative-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .creative-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .creative-content p {
+    margin-bottom: 2rem;
+  }
+  
+  .creative-content button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #7bddb4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .creative-content button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Translation Transformation */
+  .content1 {
+    animation: translateAnimation 3s infinite alternate;
+  }
+  
+  @keyframes translateAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Keyframes for Fade-in Effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply Fade-in Effect */
+  h1, p, .creative-content {
+    animation: fadeIn 2s ease-in-out;
+  }
+  

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { apiDomain } from "../../Utils/Utils";
 
-// import "./Sales.css"; // Import CSS file for custom styling
+import "./Sales.css"; 
 
 const Sales = () => {
   const [orders, setOrders] = useState([]);

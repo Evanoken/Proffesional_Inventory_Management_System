@@ -1,9 +1,10 @@
 .inventory-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3px;
+  margin-bottom: 20px;
+}
+  
   
   .inventory-container h2 {
     font-size: 24px;
@@ -24,7 +25,7 @@
   .inventory-table td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 5px solid #ccc;
   }
   
   .inventory-table th {

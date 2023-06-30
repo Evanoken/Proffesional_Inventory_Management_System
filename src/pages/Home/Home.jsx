@@ -1,14 +1,28 @@
-function Home() {
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Home.css'
+const Home= () => {
   return (
-    <div>Home
-        The section element
-WWF History
-The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.
-
-WWF's Symbol
-The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.
+    <div className="homepage">
+      {/* <div className="background-gif"></div> */}
+      <div className="content1">
+        <h1>Welcome to Inventory Management System</h1>
+        <p>Efficiently manage your inventory with ease.</p>
+        <div className="creative-content">
+          <h2>Key Features:</h2>
+          <ul>
+            <li>Track inventory levels</li>
+            <li>Manage orders and sales</li>
+            <li>Generate reports</li>
+          </ul>
+          <p>Get started today and streamline your inventory management!</p>
+          <Link to="/register">
+            <button>Get Started</button>
+          </Link>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

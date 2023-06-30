@@ -1,34 +1,37 @@
-.SErCon{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color:rgb(178, 190, 202);
-    gap: 10px;
+.SErCon {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(178, 190, 202);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.trans{
-    border: 1px solid rgb(180, 149, 90);
-    padding: 10px; 
-    border-radius:10px;  
+.trans {
+  border: 1px solid rgb(180, 149, 90);
+  padding: 10px;
+  border-radius: 10px;
 }
-.trans ul{
-    list-style-type: none;
-    padding: 10px;
-    border-radius:10px;
+.trans ul {
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 10px;
 }
-.trans ul li{
-    font-size: 20px;
-    font-weight: bold;
-    color:rgb(12, 17, 12);
-    background-color:antiquewhite; 
-    border-radius:10px;  
+.trans ul li {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(12, 17, 12);
+  background-color: antiquewhite;
+  border-radius: 10px;
 }
-.trans h3{
-    color: rgb(94, 8, 8);
+.trans h3 {
+  color: rgb(94, 8, 8);
 }
 .trans ul li li {
-    font-size: 15px;
-    color:rgb(33, 24, 46);
-    border: 0.5px solid magenta;
-    border-radius: 2px;
-    padding: 5px;
+  font-size: 15px;
+  color: rgb(33, 24, 46);
+  border: 0.5px solid magenta;
+  border-radius: 2px;
+  padding: 5px;
 }

@@ -1,7 +1,7 @@
 .achievements-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 5px;
+  margin: 20px auto;
+  padding: 4px;
   background-color: #d2dbd8;
   animation: colorAnimation 5s linear infinite;
 }
@@ -29,8 +29,8 @@
 }
 .heading {
   text-align: center;
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
@@ -44,16 +44,16 @@
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .achievement-section {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .achievement {
   color: coral;
-  font-size: 26px;
+  font-size: 22px;
   margin-bottom: 5px;
 }
 
@@ -62,5 +62,5 @@
   margin-bottom: 10px;
   background-color: aquamarine;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
 }

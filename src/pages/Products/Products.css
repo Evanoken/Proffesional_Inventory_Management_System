@@ -7,7 +7,11 @@
     background-color: #fff;
   }
 }
-
+.products{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 /* Table styling */
 table {
   width: 1000px;
@@ -45,10 +49,12 @@ button {
   cursor: pointer;
   margin-right: 5px;
   transition: background-color 0.3s ease-in-out;
+  border-radius:5px;
 }
 
-button:hover {
+/* button:hover {
   background-color: #45a049;
+} */
+.deleting{
+  background-color:orangered;
 }
-
-
