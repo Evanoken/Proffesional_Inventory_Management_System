@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { saveAs } from 'file-saver';
 import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
 import './Inventory.css'
 import { apiDomain } from '../../Utils/Utils';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
