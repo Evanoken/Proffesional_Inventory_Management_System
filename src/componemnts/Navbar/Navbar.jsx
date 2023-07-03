@@ -48,9 +48,9 @@ function Navbar() {
         <div className="navRight">
           <span>
             <MdOutlineNotificationAdd className="rIcon" />
-            {newMessageCount > 0 && (
+            {/* {newMessageCount > 0 && (
               <span className="notificationCount">{newMessageCount}</span>
-            )}
+            )} */}
           </span>
           <span>
             <FcAbout className="rIcon" />
