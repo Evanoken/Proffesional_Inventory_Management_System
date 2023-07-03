@@ -6,7 +6,6 @@ import { AiOutlineLogout } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import Avatar from '../../assets/avatar.jpg';
-import io from 'socket.io-client';
 import React, { useState, useEffect } from 'react';
 
 const socket = io();
