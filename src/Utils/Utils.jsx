@@ -1,1 +1,1 @@
-export const apiDomain = 'https://inventoryapimanager.azurewebsites.net/';
+export const apiDomain = 'https://inventoryapimanager.azurewebsites.net';
