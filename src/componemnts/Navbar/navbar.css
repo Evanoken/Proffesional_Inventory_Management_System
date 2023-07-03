@@ -10,7 +10,6 @@
     box-sizing: border-box;
     position: fixed;
     top: 0;
-    /* z-index: 100; */
 }
 .navLeft{
     display: flex;
@@ -48,9 +47,10 @@
     width: 30px;
     cursor: pointer;
 }
+/* navRight */
 .navRight .rIconL{
-    height: 30px;
-    width: 30px;
+    height: 31px;
+    width: 31px;
     cursor: pointer;
     color: red;
 }
