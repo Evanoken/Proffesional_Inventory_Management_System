@@ -4,7 +4,7 @@ import { saveAs } from 'file-saver';
 import pdfMake from 'pdfmake/build/pdfmake';
 import './Inventory.css'
 import { apiDomain } from '../../Utils/Utils';
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
+// pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 const Inventory = () => {
   const [orders, setOrders] = useState([]);
