@@ -1,1 +1,1 @@
-export const apiDomain = 'http://127.0.0.1:8081';
+export const apiDomain = 'https://inventoryapimanager.azurewebsites.net/';
