@@ -1,34 +1,34 @@
-import { FaList } from 'react-icons/fa';
-import { MdOutlineNotificationAdd } from 'react-icons/md';
-import { FcAbout, FcCustomerSupport } from 'react-icons/fc';
-import { FiSettings } from 'react-icons/fi';
-import { AiOutlineLogout } from 'react-icons/ai';
-import { useNavigate } from 'react-router-dom';
-import './navbar.css';
-import Avatar from '../../assets/avatar.jpg';
-import React, { useState, useEffect } from 'react';
+import { FaList } from "react-icons/fa";
+import { MdOutlineNotificationAdd } from "react-icons/md";
+import { FcAbout, FcCustomerSupport } from "react-icons/fc";
+import { FiSettings } from "react-icons/fi";
+import { AiOutlineLogout } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+import "./navbar.css";
+import Avatar from "../../assets/avatar.jpg";
+import React, { useState, useEffect } from "react";
 
-const socket = io();
+// const socket = io();
 function Navbar() {
-   const navigate = useNavigate();
-   const [newMessageCount, setNewMessageCount] = useState(0);
+  const navigate = useNavigate();
+  //  const [newMessageCount, setNewMessageCount] = useState(0);
 
-   useEffect(() => {
-    // Listen for 'newMessage' event
-    socket.on('newMessage', () => {
-      setNewMessageCount(newMessageCount + 1);
-    });
-    return () => {
-      socket.off('newMessage');
-    };
-  }, [newMessageCount]);
+  //  useEffect(() => {
+  //   // Listen for 'newMessage' event
+  //   socket.on('newMessage', () => {
+  //     setNewMessageCount(newMessageCount + 1);
+  //   });
+  //   return () => {
+  //     socket.off('newMessage');
+  //   };
+  // }, [newMessageCount]);
   const handleLogout = (e) => {
     // Perform logout logic here
     e.preventDefault();
     //clearUserSession(); // Call your logout utility function
 
     // Redirect to the homepage
-    navigate('/');
+    navigate("/");
   };
 
   return (
@@ -47,11 +47,11 @@ function Navbar() {
         </div>
         <div className="navRight">
           <span>
-        <MdOutlineNotificationAdd className="rIcon" />
-          {newMessageCount > 0 && (
-            <span className="notificationCount">{newMessageCount}</span>
-          )}
-        </span>
+            <MdOutlineNotificationAdd className="rIcon" />
+            {newMessageCount > 0 && (
+              <span className="notificationCount">{newMessageCount}</span>
+            )}
+          </span>
           <span>
             <FcAbout className="rIcon" />
           </span>
