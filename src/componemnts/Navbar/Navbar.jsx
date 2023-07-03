@@ -4,7 +4,7 @@ import { FcAbout, FcCustomerSupport } from 'react-icons/fc';
 import { FiSettings } from 'react-icons/fi';
 import { AiOutlineLogout } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
-import './Navbar.css';
+import './navbar.css';
 import Avatar from '../../assets/avatar.jpg';
 import React, { useState, useEffect } from 'react';
 
